@@ -216,7 +216,7 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 > ## Strategic negotiations and global partnerships
 
 ### 18. Emojis
-**Problem:** AI chatbots often add emojis to headings and list items as decoration.
+**Problem:** AI chatbots often add emojis to headings and list items as decoration. Decorative arrows (→) that chain phrases into a mock flow chart are the same problem; write the steps as a sentence.
 **Before:**
 > 🚀 **Launch Phase:** The product launches in Q3
 > 💡 **Key Insight:** Users prefer simplicity
@@ -301,7 +301,7 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 
 ### 27. Pretending to reveal a deeper truth
 
-**Phrases to watch:** The real question is, at its core, in reality, what really matters, fundamentally, the deeper issue, the heart of the matter
+**Phrases to watch:** The real question is, at its core, in reality, what really matters, fundamentally, the deeper issue, the heart of the matter, the truth is
 **Problem:** AI writing uses these phrases to make an ordinary point sound like a hidden truth.
 **Before:**
 > The real question is whether teams can adapt. At its core, what really matters is organizational readiness.
@@ -310,7 +310,7 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 
 ### 28. Announcing the next point
 
-**Phrases to watch:** Let's dive in, let's explore, let's break this down, here's what you need to know, now let's look at, without further ado, heads up, quick note, before I forget
+**Phrases to watch:** Let's dive in, let's explore, let's break this down, here's what you need to know, now let's look at, without further ado, heads up, quick note, before I forget, what if I told you, here's what nobody tells you
 **Problem:** AI writing often announces the next point instead of stating it. A casual phrase such as "one thing that bit me" can have the same problem. Remove the announcement, not just its formal tone.
 **Before:**
 > Let's dive into how caching works in Next.js. Here's what you need to know.
@@ -344,7 +344,9 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 > This function uses a hash map for O(1) lookups, avoiding the O(n²) cost of naive iteration.
 
 ### 31. Forced punchlines and dramatic fragments
-**Problem:** AI writing often turns each sentence into a dramatic closing line. One short sentence can add emphasis. A row of short fragments usually feels forced.
+
+**Words to watch:** Read that again, Let that sink in, periods between single words (every. single. day.), a single word in ALL CAPS for emphasis
+**Problem:** AI writing often turns each sentence into a dramatic closing line. One short sentence can add emphasis. A row of short fragments usually feels forced. Commanding the reader to pause, or shouting one word, manufactures gravity the claim has not earned.
 **Before:**
 > Then AlphaEvolve arrived. It had no preference for symmetry. No aesthetic prior. No nostalgia for human taste. The old rules were gone.
 **After:**
@@ -361,7 +363,7 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 
 ### 33. Fake-candid openings
 
-**Phrases to watch:** Honestly?, Look, Here's the thing, The thing is, Let's be honest, Real talk, when used as standalone hooks or fake-candid pauses before an ordinary point.
+**Phrases to watch:** Honestly?, Look, Here's the thing, The thing is, Let's be honest, Real talk, I'm no expert but, This might be controversial but, when used as standalone hooks or fake-candid pauses before an ordinary point.
 **Problem:** AI writing often starts with a staged pause or claim of honesty before making a routine point. State the point directly.
 **Before:**
 > Is it worth the price? Honestly? It depends on how often you'll use it.
