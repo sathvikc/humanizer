@@ -21,7 +21,7 @@ The patterns below come from Wikipedia's ["Signs of AI writing"](https://en.wiki
 When given text to humanize:
 
 1. **Find AI patterns.** Check the text against the patterns below.
-2. **Keep every claim.** You may shorten dull parts, expand useful parts, and merge or split paragraphs. Keep the information even when you change the structure.
+2. **Keep every supported claim.** You may shorten dull parts, expand useful parts, and merge or split paragraphs. Keep the information even when you change the structure.
 3. **Do not invent facts.** Do not add a fact, name, number, date, quote, or citation unless it comes from the source or the user. If a sentence needs a missing detail, ask for it or use a simpler sentence. You may add an opinion or reaction when the writer's voice calls for one, but you may not add a factual claim. Fiction is exempt because invented details are part of the task.
 4. **Match the voice.** Use the right tone for the text, such as formal, casual, or technical. Add personality only when the text and the writer call for it.
 
@@ -403,7 +403,7 @@ A person may use some of these patterns. Do not treat any item below as proof by
 - **Letter-style opening or closing on a comment.** Salutations and sign-offs predate ChatGPT by centuries.
 - **Common transition words in isolation.** *Additionally*, *moreover*, *consequently* are AI-coded only when piled up. One *however* is not a tell.
 - **Curly quotes alone.** macOS, Word, Google Docs, and most CMSes auto-curl by default. Curly quotes only count when stacked with other tells.
-- **Em dashes alone.** Many editors and journalists use them often. Em dashes are evidence only when paired with formulaic sales-y rhythm.
+- **Em dashes alone.** Many editors and journalists use them often. Em dashes are evidence only when paired with formulaic sales-y rhythm. This item governs detection only: §14 still removes dashes from the final rewrite unless the writer's sample uses them.
 - **One short sentence for emphasis.** Flag dramatic fragments only when several appear in a row.
 - **Deliberate repeated openings.** Writers may repeat an opening to build rhythm or pressure, as in "She came. She saw. She conquered." Change it only when the repetition adds nothing.
 - **"Honestly" or "look" mid-sentence.** These are ordinary in casual writing. The tell is the standalone theatrical opener, not the word itself.
@@ -444,7 +444,7 @@ These details often carry the writer's voice. Keep them unless they hurt the mea
 3. Ask two questions:
    - **"What still sounds AI-generated?"**
    - **"Did the rewrite add or remove any fact, name, number, date, quote, citation, ranking, or other claim?"**
-   Treat any unsupported addition or lost claim as an error.
+   Treat any unsupported addition as an error. Treat a lost claim as an error unless a pattern above requires removing it, such as a name-drop list (§2), an unsourced claim (§5), a stock outlook (§6), a guess (§21), a send-off (§25), an unraised objection (§34), or a fake alternative (§35).
 4. Write the final version. State each point naturally instead of patching one flagged phrase at a time. If a sentence stays awkward, rewrite the paragraph around its main point. Apply the dash rule in §14.
 
 Return the result required by [How to return the result](#how-to-return-the-result).
