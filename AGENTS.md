@@ -14,6 +14,7 @@ Keep the skill portable. Do not write instructions that limit it to one or two a
 - `README.md` explains installation, use, patterns, and version history.
 - `.claude-plugin/plugin.json` describes the Claude plugin and points its skill loader at the root `SKILL.md`.
 - `.claude-plugin/marketplace.json` lets users add this repo as a Claude marketplace.
+- `agents/openai.yaml` holds the display name, short description, and default prompt for OpenAI-compatible agents.
 - `scripts/validate-package.py` checks package files and shared values.
 
 ## Rules for changes
