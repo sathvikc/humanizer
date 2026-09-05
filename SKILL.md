@@ -7,7 +7,7 @@ description: |
   voice, filler, or chatbot artifacts. Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
-  version: "2.11.2"
+  version: "2.11.3"
 ---
 
 # Humanizer: remove AI writing patterns
@@ -443,7 +443,7 @@ These details often carry the writer's voice. Keep them unless they hurt the mea
 2. Write a draft. Read it aloud. Check the rhythm, details, simple verbs such as *is* and *has*, and the right level of formality.
 3. Ask two questions:
    - **"What still sounds AI-generated?"**
-   - **"Did the rewrite add or remove any fact, name, number, date, quote, citation, ranking, or other claim?"**
+   - **"Did the rewrite add or remove any fact, name, number, date, quote, citation, ranking, or other claim?"** Also check that the source's ranking claims (words such as *most*, *least*, *first*, *only*), superlatives, and simultaneity assertions (words such as *simultaneously*, *at once*, *both*) survived. Patterns §10, §15, and §24 can remove these words while appearing to remove only shape.
    Treat any unsupported addition or lost claim as an error.
 4. Write the final version. State each point naturally instead of patching one flagged phrase at a time. If a sentence stays awkward, rewrite the paragraph around its main point. Apply the dash rule in §14.
 
