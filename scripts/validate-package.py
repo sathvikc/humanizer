@@ -27,7 +27,7 @@ yaml_metadata = require_match(
     "SKILL.md must begin with YAML metadata",
 ).group(1)
 
-for unsupported_field in ("compatibility:", "allowed-tools:"):
+for unsupported_field in ("version:", "compatibility:", "allowed-tools:"):
     if re.search(rf"(?m)^{re.escape(unsupported_field)}", yaml_metadata):
         raise SystemExit(f"Remove unsupported YAML field: {unsupported_field[:-1]}")
 
