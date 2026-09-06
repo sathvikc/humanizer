@@ -18,11 +18,11 @@ Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what i
 
 A language model picks the most likely next words, so its default choice is the one that fits the widest range of readers and subjects. A human writer chooses for one reader and one subject, so their choices are uneven and specific. Every pattern below is one form of the default choice:
 
-- **Staging.** The sentence performs significance instead of adding a fact: a contrast that only adds weight, a one-line closer that repeats the point, a saying that sounds deep.
-- **Rhythm by rule.** Triads, dashes, and even sentence lengths applied everywhere, whether or not the meaning asks for them.
-- **Inflation.** Ordinary facts dressed as pivotal, vibrant, or expert-backed.
-- **Formatting by rule.** Bold, emojis, and title case applied to every item.
-- **Leftovers.** Chat wrappers, disclaimers, and drafting moves that were never meant for the reader.
+- **Staging.** The sentence performs significance instead of adding a fact, as in a contrast that only adds weight or a one-line closer that repeats the point.
+- **Rhythm by rule.** Triads and dashes applied everywhere, whether or not the meaning asks for them.
+- **Inflation.** Ordinary facts dressed as pivotal or expert-backed.
+- **Formatting by rule.** Bold and title case applied to every item.
+- **Leftovers.** Chat wrappers and drafting moves that were never meant for the reader.
 
 Word habits change with every model release; the structural habits above persist, which is why they lead the list below.
 
@@ -53,7 +53,7 @@ Without a sample, take the voice from the kind of text. Blog posts, essays, opin
 
 ## A. Staging instead of stating
 
-The sentence performs significance instead of adding information. These are the strongest and most frequent tells in current model prose. Act on one sighting.
+These are the strongest and most frequent tells in current model prose. Act on one sighting.
 
 ### 1. Not X but Y
 
@@ -134,7 +134,7 @@ The sentence performs significance instead of adding information. These are the 
 
 ## B. Rhythm by rule
 
-Structure chosen by default instead of by ear. Frequent, but a person may do any one of these on purpose, so the weaker ones need company.
+A person may do any one of these on purpose, so the weaker ones need company from other tells.
 
 ### 6. Forced triads
 
@@ -193,7 +193,7 @@ Structure chosen by default instead of by ear. Frequent, but a person may do any
 
 ## C. Inflation and borrowed authority
 
-Ordinary facts dressed as significant ones. These dominated early AI prose and still fill descriptive and encyclopedic text.
+The fact underneath is usually sound. Keep it and remove the dressing.
 
 ### 12. Overused AI words
 
@@ -272,7 +272,7 @@ Ordinary facts dressed as significant ones. These dominated early AI prose and s
 
 ## D. Formatting by rule
 
-Decoration applied to every item. Templates and visual editors also produce clean formatting, so judge the decoration, not the polish.
+Templates and visual editors also produce clean formatting. The tell is decoration on every item.
 
 ### 19. Bold as decoration
 
@@ -311,7 +311,7 @@ Decoration applied to every item. Templates and visual editors also produce clea
 
 ## E. Leftovers from the chat and the draft
 
-Text that was written for the conversation or the model's own process, not for the reader.
+Remove these outright. Nothing here needs rewriting.
 
 ### 22. Chatbot residue
 
@@ -359,7 +359,7 @@ Text that was written for the conversation or the model's own process, not for t
 
 ## When not to act
 
-Each pattern describes a default choice, and a person can make any one of them on purpose. Act on a *weak alone* tell only when several tells share a passage. Leave a watched phrase alone inside a quotation, a title, a proper name, or a passage that discusses the phrase rather than uses it. Salutations and sign-offs on a letter or comment predate chatbots. Text written before November 30, 2022 is not AI-written. People judging by feel do little better than chance at telling AI text from human text, and human writing keeps absorbing AI habits, so the cluster rule is the safeguard, not instinct.
+Each pattern describes a default choice, and a person can make any one of them on purpose. Act on a *weak alone* tell only when several tells share a passage. Leave a watched phrase alone inside a quotation, a title, a proper name, or a passage that discusses the phrase rather than uses it. Salutations and sign-offs on a letter or comment predate chatbots. Text written before November 30, 2022 is not AI-written. People judging by feel do little better than chance at telling AI text from human text, and human writing keeps absorbing AI habits. Several tells together are the safeguard.
 
 Keep the details that carry the writer's voice unless they hurt the meaning:
 
