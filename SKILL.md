@@ -128,17 +128,24 @@ Add details such as dates or public actions only when they come from the source 
 > Gallery 825 is LAAA's exhibition space for contemporary art. The gallery has four rooms totaling 3,000 square feet.
 
 ### 9. Not X but Y and clipped negative endings
-**Problem:** AI writing overuses forms such as "Not only...but..." and "It's not just X, it's Y."
+**Words to watch:** not X, but Y; not just X, but Y; not only X, but Y; not merely X, but Y; it's not X, it's Y
+**Problem:** AI writing overuses a negative claim followed by a more emphatic replacement. It uses forms such as "Not only...but..." and "It's not just X, it's Y" as a default way to add weight. State the point directly instead.
 
 It also adds clipped endings such as "no guessing" instead of writing a clear clause.
 **Before:**
 > It's not just about the beat riding under the vocals; it's part of the aggression and atmosphere. It's not merely a song, it's a statement.
 **After:**
 > The heavy beat adds to the aggressive tone.
+**Before:**
+> This is not a minor update, but a complete rethinking of how teams work.
+**After:**
+> The update changes how teams work.
 **Before (tailing negation):**
 > The options come from the selected item, no guessing.
 **After:**
 > The options come from the selected item without forcing the user to guess.
+
+Keep the form when the negative clause corrects a real misconception or makes a useful contrast. Do not use it only to make an ordinary claim sound larger.
 
 ### 10. Forced groups of three
 **Problem:** AI writing often forces ideas into groups of three to sound complete.
