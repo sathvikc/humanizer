@@ -9,11 +9,23 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def read_package_file(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8")
+    except OSError as error:
+        raise SystemExit(f"Cannot read {path.relative_to(ROOT)}: {error}")
+
+
 SKILL_PATH = ROOT / "SKILL.md"
-SKILL = SKILL_PATH.read_text(encoding="utf-8")
-README = (ROOT / "README.md").read_text(encoding="utf-8")
-AGENTS = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
-PLUGIN = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))
+SKILL = read_package_file(SKILL_PATH)
+README = read_package_file(ROOT / "README.md")
+AGENTS = read_package_file(ROOT / "AGENTS.md")
+try:
+    PLUGIN = json.loads(read_package_file(ROOT / ".claude-plugin" / "plugin.json"))
+except json.JSONDecodeError as error:
+    raise SystemExit(f"Fix the JSON in .claude-plugin/plugin.json: {error}")
 
 
 def require_match(match: re.Match[str] | None, message: str) -> re.Match[str]:
@@ -32,8 +44,8 @@ for unsupported_field in ("version:", "compatibility:", "allowed-tools:"):
         raise SystemExit(f"Remove unsupported YAML field: {unsupported_field[:-1]}")
 
 skill_version = require_match(
-    re.search(r'(?m)^\s+version:\s*["\']([^"\']+)["\']\s*$', yaml_metadata),
-    "Add metadata.version to SKILL.md",
+    re.search(r'(?m)^\s+version:\s*["\']?([0-9]+\.[0-9]+\.[0-9]+)["\']?\s*$', yaml_metadata),
+    "Add metadata.version to SKILL.md as a three-part version",
 ).group(1)
 readme_version = require_match(
     re.search(r"(?m)^- \*\*([0-9]+\.[0-9]+\.[0-9]+)\*\*", README),
@@ -76,11 +88,13 @@ pattern_numbers = [
 if pattern_numbers != list(range(1, 36)):
     raise SystemExit(f"Number SKILL.md patterns from 1 through 35: {pattern_numbers}")
 
-readme_numbers = {
+readme_numbers = [
     int(number) for number in re.findall(r"(?m)^\| ([0-9]+) \|", README)
-}
-if readme_numbers != set(range(1, 36)):
-    raise SystemExit("List patterns 1 through 35 in the README table")
+]
+if sorted(readme_numbers) != list(range(1, 36)):
+    raise SystemExit(
+        f"List patterns 1 through 35 once each in the README table: {sorted(readme_numbers)}"
+    )
 
 if len(SKILL.splitlines()) > 500:
     raise SystemExit("Keep SKILL.md at 500 lines or fewer")
