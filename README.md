@@ -159,6 +159,7 @@ Humanizer follows the sample's rhythm, word choice, punctuation, and deliberate 
 <details>
 <summary>Show release notes</summary>
 
+- **2.11.3** - Strengthened the step 3 fact-integrity check to explicitly guard against silent deletion of ranking claims (words such as *most*, *least*, *first*, *only*), superlatives, and simultaneity assertions (words such as *simultaneously*, *at once*, *both*). Patterns §10, §15, and §24 can remove these words while appearing to remove only shape (fixes #212). No change to the 35 patterns.
 - **2.11.2** - Removed the plugin symlink and separate Claude Desktop package. Current Claude Code loads the root `SKILL.md` directly, so GitHub's source ZIP now works in Claude Desktop. No change to the 35 patterns.
 - **2.11.1** - Added a Claude Desktop-ready release package with one regular `humanizer/SKILL.md` file. GitHub's source archive still keeps the plugin symlink (fixes #224). No change to the 35 patterns.
 - **2.11.0** - Rewrote all repo guidance, descriptions, checks, and skill instructions in Plain Language. Kept all 35 patterns and their behavior.
