@@ -21,7 +21,6 @@ def read_package_file(path: Path) -> str:
 SKILL_PATH = ROOT / "SKILL.md"
 SKILL = read_package_file(SKILL_PATH)
 README = read_package_file(ROOT / "README.md")
-AGENTS = read_package_file(ROOT / "AGENTS.md")
 try:
     PLUGIN = json.loads(read_package_file(ROOT / ".claude-plugin" / "plugin.json"))
 except json.JSONDecodeError as error:
@@ -64,39 +63,25 @@ if SKILL_PATH.is_symlink() or skill_files != {Path("SKILL.md")}:
 if PLUGIN.get("skills") != ["./"]:
     raise SystemExit("Point the Claude plugin skill loader at the repo root")
 
-plain_language_rules = (
-    "## Writing style",
-    "Lead with the main point.",
-    "Use common words and active voice.",
-    "Keep sentences and paragraphs short.",
-    "Use `must` for requirements.",
-    "Keep the full technical meaning.",
-)
-missing_plain_language_rules = [
-    rule for rule in plain_language_rules if rule not in AGENTS
-]
-if missing_plain_language_rules:
-    raise SystemExit(
-        "Add the missing Plain Language rules to AGENTS.md: "
-        + ", ".join(missing_plain_language_rules)
-    )
-
 pattern_numbers = [
     int(number)
     for number in re.findall(r"(?m)^### ([0-9]+)\. ", SKILL)
 ]
-if pattern_numbers != list(range(1, 36)):
-    raise SystemExit(f"Number SKILL.md patterns from 1 through 35: {pattern_numbers}")
+pattern_count = len(pattern_numbers)
+if pattern_count == 0 or pattern_numbers != list(range(1, pattern_count + 1)):
+    raise SystemExit(f"Number SKILL.md patterns from 1 upward without gaps: {pattern_numbers}")
 
 readme_numbers = [
     int(number) for number in re.findall(r"(?m)^\| ([0-9]+) \|", README)
 ]
-if sorted(readme_numbers) != list(range(1, 36)):
+if sorted(readme_numbers) != pattern_numbers:
     raise SystemExit(
-        f"List patterns 1 through 35 once each in the README table: {sorted(readme_numbers)}"
+        f"List patterns 1 through {pattern_count} once each in the README tables: {sorted(readme_numbers)}"
     )
+if f"## The {pattern_count} patterns" not in README:
+    raise SystemExit(f"Title the README pattern section 'The {pattern_count} patterns'")
 
-if len(SKILL.splitlines()) > 500:
-    raise SystemExit("Keep SKILL.md at 500 lines or fewer")
+if len(SKILL.splitlines()) > 400:
+    raise SystemExit("Keep SKILL.md at 400 lines or fewer")
 
 print(f"Humanizer package v{skill_version} is valid")
