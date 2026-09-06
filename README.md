@@ -87,7 +87,12 @@ Humanizer follows the sample's rhythm, word choice, punctuation, and deliberate 
 | 17 | **Title case in headings** | "Strategic Negotiations And Partnerships" | "Strategic negotiations and partnerships" |
 | 18 | **Emojis** | "🚀 Launch Phase: 💡 Key Insight:" | Remove emojis |
 | 19 | **Curly quotes** | `said “the project”` | `said "the project"` |
-| 26 | **Too many hyphenated word pairs** | “cross-functional, data-driven, client-facing” | Keep only the hyphens grammar needs |
+
+### More style patterns
+
+| # | Pattern | Before | After |
+|---|---------|--------|-------|
+| 26 | **Too many hyphenated word pairs** | "cross-functional, data-driven, client-facing" | Keep only the hyphens grammar needs |
 | 27 | **A fake deeper truth** | "At its core, what matters is..." | State the point directly |
 | 28 | **Announcing the next point** | "Let's dive in", or "one thing that bit me" | Start with the content |
 | 29 | **A heading repeated below itself** | "## Performance" + "Speed matters." | Let the heading do the work |

@@ -180,7 +180,7 @@ Do not ban the repeated word. Fix the repeated sentence pattern. The remaining s
 
 ### 14. Em and en dashes
 
-**Rule:** The final rewrite must not contain em dashes (—) or en dashes (–), unless the writer's sample uses them. Replace a dash with a period, comma, colon, or parentheses, or rewrite the sentence. Also check for spaced dashes (` — `) and double hyphens (` -- `) used as dashes.
+**Rule:** The final rewrite must not contain em dashes (—) or en dashes (–), unless the writer's sample uses them. Replace a dash with a period, comma, colon, or parentheses, or rewrite the sentence. Also check for spaced dashes (` — `) and double hyphens (` -- `) used as dashes. Do not change dashes or hyphens inside code blocks, inline code spans, commands, paths, or URLs.
 **Before:**
 > The term is primarily promoted by Dutch institutions—not by the people themselves. You don't say "Netherlands, Europe" as an address—yet this mislabeling continues—even in official documents.
 **After:**
@@ -289,6 +289,8 @@ Before returning the rewrite, search for `—` and `–`. Remove each one unless
 > The future looks bright for the company. Exciting times lie ahead as they continue their journey toward excellence. This represents a major step in the right direction.
 **After:**
 > (Cut the paragraph. End on the last concrete fact instead of a send-off. If the source states real plans, use those.)
+
+## More style patterns
 
 ### 26. Too many hyphenated word pairs
 
@@ -433,7 +435,7 @@ These details often carry the writer's voice. Keep them unless they hurt the mea
 
 **Pasted text (default).** Return the draft, a short list of remaining AI patterns, and the final rewrite.
 
-**File mode.** When the user names a file, run the full rewrite process but write only the final text to the file. Change prose only. Keep code blocks, YAML metadata, data, and link targets unchanged. Then give the user a short summary.
+**File mode.** When the user names a file, run the full rewrite process but write only the final text to the file. Change prose only. Keep code blocks, inline code spans, exact identifiers, commands, paths, YAML metadata, data, and link targets unchanged. Then give the user a short summary.
 
 **Embedded mode.** When another task uses this skill for a pull request, commit message, or document, return only the final text.
 
